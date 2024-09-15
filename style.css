@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3A1C71, #FFAF7B);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e66465, #9198e5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+#rock {
+    background-image: url('https://www.seekpng.com/png/detail/111-1113492_rock-paper-scissors-boston.png');
+}
+
+#paper {
+    background-image: url('https://icon-library.com/images/spock-icon/spock-icon-3.jpg');
+}
+
+#scissors {
+    background-image: url('https://play-lh.googleusercontent.com/MjSprmVFbrjvlgvrQx8jvpI1nisXh3mcTn39gZgZHca9Hj7N_rdngGoS336gPQpLhGI');
+}
+
+#resultbox {
+    margin-top: 2rem;
+}
+
+#result {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    button {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #result {
+        font-size: 1.5rem;
+    }
+}
